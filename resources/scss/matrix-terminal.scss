@@ -1,0 +1,24 @@
+#terminal {
+    height: 270px;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #000;
+    color: #0f0;
+  }
+
+  .typing {
+    margin-top: 0;
+    font-family: Courier New, monospace;
+  }
+
+  .typing::after {
+    content: "|"; /* Einfügen eines senkrechten Balkens am Ende der Zeile */
+    animation: blink-caret 1s infinite; /* Animation des senkrechten Balkens */
+  }
+  
+  @keyframes blink-caret {
+    50% {
+      opacity: 0; /* Halbtransparent während der Hälfte der Animation */
+    }
+  }

@@ -1,0 +1,20 @@
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+}
+  
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: $color-main-background;
+    font-family: Arial, sans-serif; /* First is default and second is fallback */
+    margin: 0; /* Default is 8, so we work with 0 */
+}
+
+@import 'nav';
+@import 'article';
+@import 'matrix-terminal';
+@import 'pulse';
